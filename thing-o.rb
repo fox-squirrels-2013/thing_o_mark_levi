@@ -1,0 +1,11 @@
+require 'sinatra'
+require 'active_record'
+require_relative './model/books.rb'
+
+
+ActiveRecord::Base.establish_connection(adapter: 'postgresql')
+
+get '/index' do 
+  erb :index
+end
+
