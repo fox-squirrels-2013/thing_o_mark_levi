@@ -1,4 +1,10 @@
-i love books. 
+<p>Hey, here are some that were already recommended.</p>
 
+<% @books.each do |book| %>
+  <%= book.title %><br>
+<% end %>
 
+<p>Click on the link to recommend your favorite book.</p>
+
+<a href="/recommend_a_book">  Click  </a>
 
